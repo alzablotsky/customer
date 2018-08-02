@@ -9,12 +9,12 @@ import { DatePipe } from '@angular/common';
 @Injectable()
 export class CouponService {
 
-public urlAll = 'http://localhost:8080/getallcoupons';
-public urlNonPurchased = 'http://localhost:8080/getnonpurchasedcoupons';
-public url = 'http://localhost:8080/getpurchasedcoupons'; 
-public urlType = 'http://localhost:8080/getpurchasedcouponsbytype'; 
-public urlPrice = 'http://localhost:8080/getpurchasedcouponsbyprice';
-public urlLogin = 'http://localhost:8080/getlogincustomer';
+public urlAll = 'getallcoupons';
+public urlNonPurchased = 'getnonpurchasedcoupons';
+public url = 'getpurchasedcoupons'; 
+public urlType = 'getpurchasedcouponsbytype'; 
+public urlPrice = 'getpurchasedcouponsbyprice';
+public urlLogin = 'getlogincustomer';
 
    // dependency injection for http object and date pipe
    constructor(private _http : Http, private _datepipe: DatePipe ) {}
